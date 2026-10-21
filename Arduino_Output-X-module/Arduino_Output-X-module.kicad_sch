@@ -1110,6 +1110,189 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:LED"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LED"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Light emitting diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Sim.Pins" "1=K 2=A"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "LED diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LED_0_1"
+				(polyline
+					(pts
+						(xy -3.048 -0.762) (xy -4.572 -2.286) (xy -3.81 -2.286) (xy -4.572 -2.286) (xy -4.572 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.778 -0.762) (xy -3.302 -2.286) (xy -2.54 -2.286) (xy -3.302 -2.286) (xy -3.302 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 0) (xy 1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LED_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3426,6 +3609,12 @@
 		)
 	)
 	(junction
+		(at 124.46 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "192ee364-082f-4826-a14d-48b46b5dffe7")
+	)
+	(junction
 		(at 88.9 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3478,10 +3667,6 @@
 	(no_connect
 		(at 137.16 135.89)
 		(uuid "6d2754a8-a168-42bf-a9e5-ea2171bca8a6")
-	)
-	(no_connect
-		(at 111.76 140.97)
-		(uuid "8d1a51f9-8fd0-4688-8f7c-16b1b7e1ac77")
 	)
 	(no_connect
 		(at 137.16 110.49)
@@ -3750,6 +3935,16 @@
 			(type default)
 		)
 		(uuid "5975396e-c2fe-4d47-a93e-8b28b10ef1f0")
+	)
+	(wire
+		(pts
+			(xy 104.14 148.59) (xy 124.46 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "640f5193-ab44-4638-8468-85f1b9e69cb2")
 	)
 	(wire
 		(pts
@@ -6005,7 +6200,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:TO-263-5_TabPin3"
+		(property "Footprint" "Package_TO_SOT_THT:TO-264-5_Vertical"
 			(at 67.31 64.77 0)
 			(effects
 				(font
@@ -6249,7 +6444,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-12_1x12_P5.00mm_Horizontal"
+		(property "Footprint" "Connector_Phoenix_GMSTB:PhoenixContact_GMSTBA_2,5_8-G_1x08_P7.50mm_Horizontal"
 			(at 231.14 133.35 0)
 			(effects
 				(font
@@ -6652,7 +6847,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "64f6803e-8835-4fc7-b791-9467d3bf8cd8")
 		(property "Reference" "R1"
 			(at 261.62 83.8199 0)
@@ -6663,8 +6857,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 261.62 86.3599 0)
+		(property "Value" "220 ohm"
+			(at 256.54 89.916 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6797,7 +6991,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "70529f72-2144-4060-b4af-b11ae4bade74")
 		(property "Reference" "R3"
 			(at 233.68 109.2199 0)
@@ -6808,8 +7001,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 233.68 111.7599 0)
+		(property "Value" "220 ohm"
+			(at 228.6 114.808 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7170,7 +7363,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "97940414-6d00-43fc-ba90-d1c5016c6184")
 		(property "Reference" "R8"
 			(at 209.55 109.2199 0)
@@ -7181,8 +7373,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 209.55 111.7599 0)
+		(property "Value" "220 ohm"
+			(at 204.724 115.062 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7240,7 +7432,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "9a23dcd0-b617-4d21-931d-ad39314b33a5")
 		(property "Reference" "R7"
 			(at 209.55 83.8199 0)
@@ -7251,8 +7442,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 209.55 86.3599 0)
+		(property "Value" "220 ohm"
+			(at 204.724 89.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7531,7 +7722,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a2e971cb-b9fd-4d98-8fa5-45a32eebdf32")
 		(property "Reference" "R6"
 			(at 185.42 83.8199 0)
@@ -7542,8 +7732,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 185.42 86.3599 0)
+		(property "Value" "220 ohm"
+			(at 180.848 89.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7588,6 +7778,73 @@
 			(project "Arduino_Output-X-module"
 				(path "/85e02135-f787-4172-b737-c10235e321d7"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 107.95 140.97 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a6346e29-445a-4d90-a153-39f764f3ba06")
+		(property "Reference" "R9"
+			(at 103.378 139.954 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K ohms"
+			(at 109.728 143.51 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+			(at 107.95 142.748 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 107.95 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 107.95 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8b235441-3550-4694-b50c-f4d5ea487013")
+		)
+		(pin "1"
+			(uuid "a1bdd465-442a-4e23-877a-19516a882d27")
+		)
+		(instances
+			(project ""
+				(path "/85e02135-f787-4172-b737-c10235e321d7"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -7676,7 +7933,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "ac89e362-647e-4bc8-b7ee-f510ae92d491")
 		(property "Reference" "R2"
 			(at 233.68 83.8199 0)
@@ -7687,8 +7943,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 233.68 86.3599 0)
+		(property "Value" "220 ohm"
+			(at 228.854 89.154 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7881,6 +8137,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 104.14 144.78 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "b2e252d2-e36a-43a7-9ed6-1e9639ca0dfb")
+		(property "Reference" "D10"
+			(at 98.298 143.764 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 98.298 146.304 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Library:LED_D1.8mm_Horizontal_06.35mm_Z16.0mm"
+			(at 104.14 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 104.14 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 104.14 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 104.14 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3dc5831a-4e04-434f-99c4-b7af22234ac0")
+		)
+		(pin "2"
+			(uuid "86056e1a-82e0-4ccb-95b1-cfc7ec304f56")
+		)
+		(instances
+			(project ""
+				(path "/85e02135-f787-4172-b737-c10235e321d7"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 182.88 111.76 180)
 		(unit 1)
@@ -7888,7 +8222,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "bdd79efa-0b8e-480c-8cfc-6991f2ddbde4")
 		(property "Reference" "R5"
 			(at 185.42 110.4899 0)
@@ -7899,8 +8232,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 185.42 113.0299 0)
+		(property "Value" "220 ohm"
+			(at 180.34 115.824 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8207,7 +8540,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "dc1c2f06-e6a9-4584-a4b7-0dd54e5c968c")
 		(property "Reference" "R4"
 			(at 261.62 109.2199 0)
@@ -8218,8 +8550,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "R"
-			(at 261.62 111.7599 0)
+		(property "Value" "220 ohm"
+			(at 256.794 114.554 90)
 			(effects
 				(font
 					(size 1.27 1.27)
