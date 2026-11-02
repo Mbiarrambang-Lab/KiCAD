@@ -513,7 +513,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "Arduino_Output-X-module.dsn",
-      "step": "",
+      "step": "Arduino_Output-X-module.step",
       "svg": "",
       "vrml": ""
     },
